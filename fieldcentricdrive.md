@@ -1,7 +1,10 @@
-field centric drive files :D very nice very good. very cool.
+# Field Centric Drive Code:
+This page has the code for Field Centric Drive. If you don't know, FCD (Field Centric Drive), is very useful in comp.\
+If you imagine driving a robot normally, as long as the robot is facing forward relative to you, it drives normally. But if you were to turn the robot, instead of going forward relative to you, it will go forward relative to the robot. This can be bad since during comp its difficult to keep track of the robot heading and everything else going on around you.\
+FCD makes it so the driver has one less thing to worry about during comp and makes it easier to drive.
 
-
-Make a new .java file named: `FieldCentricDriveNavX` and add this to the file:
+## The Code
+To use the FCD code, make a new .java file named: `FieldCentricDriveNavX` and paste this to the file:
 ```java
 package org.firstinspires.ftc.teamcode;
 
