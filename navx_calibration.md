@@ -18,13 +18,14 @@ If Windows warns you about running the file, **ignore it** <3. Then follow the i
 ![NavX install application](images/navx-install.png)
 
 After the software has installed, you can launch it! If you don't know how to launch it, go to [this page](https://potatzz.github.io/ms-robotics-resources.github.io/opening_software_with_windows_key.html) on how to launch files with no shortcut.
-Specifically, you should launch the NavX Config **as an administrator**. When the software launches, plug in the NavX into one of the USB-A ports.  
-The software should automatically detect that something is plugged into the USB port, press open and you should see a bunch of numbers apear. 
+Specifically, you should launch the NavX UI **as an administrator**. When the software launches, plug in the NavX into one of the USB-A ports.  
+The software should automatically detect that something is plugged into the USB port. You should now see an arrow/weird looking plane of a couple colours apear. You might notice that if you move the NavX, so does the arrow. If the NavX isn't properly calibrated the arrow should move weirdly. Try keeping the NavX as still as possible and turn it forward on one face. If the arrow doesn't roll to the side or tilt forward or backward, then its most likely inproperly calibrated.
 
 [image]
 
-(untested)
-To calibrate the NavX, go to Advanced>Start Calibration(?). Slowly and steadily, rotate the NavX so that both sides of the NavX face the floor. Once the software detects the correct movements, it will be finished. 
-If you would like, you can run the calibration multiple times for better accuracy.
-  
+To calibrate the NavX, keep it still. Preferably you also brace it against a 90 degree angle somewhere, but holding it facing your laptop/screen also works.\
+Then hold down the "Cal" button and press the "RST" button. Hold it down until the calibration light turns off.
+
+
+
 [Home Page](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
