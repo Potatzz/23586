@@ -24,8 +24,8 @@ The software should automatically detect that something is plugged into the USB 
 [image]
 
 To calibrate the NavX, keep it still. Preferably you also brace it against a 90 degree angle somewhere, but holding it facing your laptop/screen also works.\
-Then hold down the "Cal" button and press the "RST" button. Hold it down until the calibration light turns off.
-
+Then hold down the "Cal" button and press the "RST" button. Hold it down until the calibration light turns off. There's a video to show it below
+![calibrating the navx](images/calibrating-navx.gif)
 
 
 [Home Page](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
