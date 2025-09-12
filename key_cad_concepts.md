@@ -8,7 +8,6 @@ If you don't have an account, you can use your school email to make a free accou
 
 # Your First Part
 uhh we're still doing this part sorry .-.
-djkshfgl
 
 
 
