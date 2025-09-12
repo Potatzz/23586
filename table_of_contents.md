@@ -20,4 +20,3 @@ FTC Programming Guide - *Will explain different libraries you can use and how to
 ### QOL and Other Tutorials
 [Using the Windows Key](https://potatzz.github.io/ms-robotics-resources.github.io/opening_software_with_windows_key.html) - A very in depth and long explanation on how to use the complicated and powerful Windows key on all Windows OS using devices\
 FTC Programming Guide - *Will explain different libraries you can use, how to setup code, and guide you through making a simple program for a motor!*\
-How to do Simple Tasks Fast - *Will explain various ways of doing certain tasks faster, as well as give pointers on habits you should build* **WIP**
