@@ -31,7 +31,7 @@ The software should automatically detect that something is plugged into the USB 
 ![Calibated NavX](images/navx-calibrated.jpeg)
 
 To calibrate the NavX, keep it still. Preferably you also brace it against a 90 degree angle somewhere, but holding it facing your laptop/screen also works.\
-Then hold down the "Cal" button and press the "RST" button. Hold it down until the calibration light turns off. There's a video to show it below:\
+Then hold down the "Cal" button and press the "RST" button. Hold it down until the calibration light turns off. You'll also see it'll disconnect and reconnect to your laptop, just wait for the Cal light to turn off and you're set! There's a video to show it below:\
 ![calibrating the navx](images/calibrating-navx.gif)
 
 
