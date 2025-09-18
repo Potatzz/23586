@@ -12,8 +12,8 @@ If you have any issues with the site, whether it be accessing certain pages or m
 I'll also be around school so you can always find me there and tell me in person.
 
 # Creators
-This website was created by Cowboy Stinson '29.\
-Cowboy Stinson '29, Nik Shah '29, and Alexander Sudhof '29 have contributed and edited to all the pages on the website.
+This website was created by **Cowboy Stinson '29**.\
+**Cowboy Stinson '29, Nik Shah '29, and Alexander Sudhof '29** have contributed and edited to all the pages on the website. If you need edit access or find an issue email [cstinson29@priorypanther.com](mailto:cstinson29@priorypanther.com). 
 
 
 [Home](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
