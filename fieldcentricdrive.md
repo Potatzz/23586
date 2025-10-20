@@ -79,8 +79,8 @@ public class FieldCentricDriveNavX extends OpMode {
 
         // These two variables take the joystick values and the robot direction
         // They do math to counteract the robots correct direction
-        double robotRotY = lJoyX * Math.sin(yaw) + lJoyY * Math.cos(yaw);
-        double robotRotX = - lJoyY * Math.sin(yaw) + lJoyX * Math.cos(yaw);
+        double robotRotY = lJoyX * Math.sin(-yaw) + lJoyY * Math.cos(-yaw);
+        double robotRotX = - lJoyY * Math.sin(-yaw) + lJoyX * Math.cos(-yaw);
 
         // The above variables could technically return values above or below 1 or -1. This is bad since the motors
         // This is bad since the motors will just set the value to 1 or -1 if they're given a power value outside their range (-1 -> 1)
