@@ -1,6 +1,6 @@
 # General FTC Code
-This page is based off of and written from the LearnJavaForFTC pdf file in our GitHub. Go check it out for more information!
-
+This page is based off of and written from the LearnJavaForFTC pdf file in our GitHub. Go check it out for more information!\
+**This page will assume you have a decent or general knowledge of how to use, made and the terminology involving: *Methods, Classes, Variables, Loops, Conditionals, and Importing things in Java***
 
 
 # OpMode and LinearOpMode
