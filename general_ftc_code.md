@@ -1,6 +1,7 @@
 # General FTC Code
 This page is based off of and written from the [LearnJavaForFTC](https://github.com/Potatzz/ms-robotics-resources.github.io/tree/bbe5959fdd6d67d1f036102f8bf4f4e890d67479/Downloadable%20Resources) downloadable from [our GitHub](https://github.com/Potatzz/ms-robotics-resources.github.io)!\
-**This page will assume you have a decent or general knowledge of how to use, made and the terminology involving: *Methods, Classes, Variables, Loops, Conditionals, and Importing things in Java*. It also assumes that you know what the Control Hub and Drivers Station is and that you are using Andriod Studio to program.** (Both Andriod Studio and OnBotJava have their advatages and disadvatages, but many teams (including ours) mainly use Andriod Studio.)
+### This page will assume you have a decent or general knowledge of how to use, made and the terminology involving: *Methods, Classes, Variables, Loops, Conditionals, and Importing things in Java*. It also assumes that you know what the Control Hub and Drivers Station is and that you are using Andriod Studio to program
+(Both Andriod Studio and OnBotJava have their advatages and disadvatages, but many teams (including ours) mainly use Andriod Studio.)
 
 
 # OpMode and LinearOpMode
