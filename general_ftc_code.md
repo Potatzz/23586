@@ -104,3 +104,4 @@ A key part of the robot, is being able to take in human input! The way that ever
 
 
 
+[Home Page](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
