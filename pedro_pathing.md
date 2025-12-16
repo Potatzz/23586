@@ -1,6 +1,7 @@
 Presiquites: This is your tutorial for how to set up pedro pathing. First, you must download andriod studio. You can't do this on your chromebook. Next, you must clone this repo in andriod sutdio. The repo is https://github.com/Pedro-Pathing/Quickstart.git.
 
 Panels: Next, you must download panels. Add these imports at the top of the Tuning.Java file:
+
 import com.bylazar.configurables.annotations.Configurable;
 import com.bylazar.configurables.annotations.IgnoreConfigurable;
 import com.bylazar.configurables.PanelsConfigurables;
@@ -9,6 +10,7 @@ import com.bylazar.field.PanelsField;
 import com.bylazar.field.Style;
 import com.bylazar.telemetry.PanelsTelemetry;
 import com.bylazar.telemetry.TelemetryManager;
+
 Replace of ad this code to the drawing class:
 /**
  * This is the Drawing class. It handles the drawing of stuff on Panels Dashboard, like the robot.
@@ -156,11 +158,30 @@ class Drawing {
     }
 }
 
-
-
 In your constants file, add .mass() below
 public static FollowerConstants followerConstants = new FollowerConstants().
 Here is an example:
 public static FollowerConstants followerConstants = new FollowerConstants()
         .mass(5);
 
+Adding Drive-Train Constants: Copy and paste this code. MAKE SURE THE CONFIG HAS THE SAME MOTOR AND ENCODER NAMES AS THE ONES LISTED BELOW
+public static MecanumConstants driveConstants = new MecanumConstants()
+        .maxPower(1)
+        .rightFrontMotorName("RightFront")
+        .rightRearMotorName("RightBack")
+        .leftRearMotorName("LeftBack")
+        .leftFrontMotorName("LeftFront")
+        .leftFrontMotorDirection(DcMotorSimple.Direction.REVERSE)
+        .leftRearMotorDirection(DcMotorSimple.Direction.REVERSE)
+        .rightFrontMotorDirection(DcMotorSimple.Direction.FORWARD)
+        .rightRearMotorDirection(DcMotorSimple.Direction.FORWARD)
+
+Then, you must add the mecanum drive-train code. MAKE SURE TO ONLY ADD THE PARTS OFF THIS SCRIPT BELOW THAT AREN"T THERE:
+public static Follower createFollower(HardwareMap hardwareMap) {
+        return new FollowerBuilder(followerConstants, hardwareMap)
+                .pathConstraints(pathConstraints)
+                .mecanumDrivetrain(driveConstants)
+                .build();
+}
+
+Localiztion: Our team uses a drive encoder localization method.
