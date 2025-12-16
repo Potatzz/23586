@@ -1,4 +1,5 @@
 Presiquites: This is your tutorial for how to set up pedro pathing. First, you must download andriod studio. You can't do this on your chromebook. Next, you must clone this repo in andriod sutdio. The repo is https://github.com/Pedro-Pathing/Quickstart.git.
+
 Panels: Next, you must download panels. Add these imports at the top of the Tuning.Java file:
 import com.bylazar.configurables.annotations.Configurable;
 import com.bylazar.configurables.annotations.IgnoreConfigurable;
