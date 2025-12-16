@@ -188,3 +188,11 @@ public static Follower createFollower(HardwareMap hardwareMap) {
 }
 
 Localiztion: Our team uses a drive encoder localization method.
+
+
+
+
+
+
+
+[Home Page](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
