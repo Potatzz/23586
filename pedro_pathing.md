@@ -1,6 +1,15 @@
-Presiquites: This is your tutorial for how to set up pedro pathing. First, you must download andriod studio. You can't do this on your chromebook. Next, you must clone this repo in andriod studio. The repo is https://github.com/Pedro-Pathing/Quickstart.git.
+# THIS IS A WORK IN PROGRESS
 
-Panels: Next, you must download panels. Add these imports at the top of the Tuning.Java file:
+# This is the Pedro Pathing Tutorial
+
+# What is Pedro Pathing?:
+Pedro pathing is a software which allows us to plot incredibly efficient auto paths using bezier curves and lines.
+
+# Presiquites:
+This is your tutorial for how to set up pedro pathing. First, you must download andriod studio. You can't do this on your chromebook. Next, you must clone this repo in andriod studio. The repo is https://github.com/Pedro-Pathing/Quickstart.git.
+
+# Panels:
+Next, you must download panels. Add these imports at the top of the Tuning.Java file:
 
 import com.bylazar.configurables.annotations.Configurable;
 import com.bylazar.configurables.annotations.IgnoreConfigurable;
@@ -165,7 +174,8 @@ Here is an example:
 public static FollowerConstants followerConstants = new FollowerConstants()
         .mass(5);
 
-Adding Drive-Train Constants: Copy and paste this code. MAKE SURE THE CONFIG HAS THE SAME MOTOR AND ENCODER NAMES AS THE ONES LISTED BELOW
+# Adding Drive-Train Constants:
+Copy and paste this code. MAKE SURE THE CONFIG HAS THE SAME MOTOR AND ENCODER NAMES AS THE ONES LISTED BELOW
 
 public static MecanumConstants driveConstants = new MecanumConstants()
         .maxPower(1)
@@ -187,7 +197,8 @@ public static Follower createFollower(HardwareMap hardwareMap) {
                 .build();
 }
 
-Localiztion: Our team uses a drive encoder localization method.
+# Localiztion:
+Our team uses a drive encoder localization method.
 
 
 
