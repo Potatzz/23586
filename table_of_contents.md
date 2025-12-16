@@ -2,8 +2,7 @@
 [Home Page](https://potatzz.github.io/ms-robotics-resources.github.io/)
 <br />
 ### Programming
-[Pedro Pathing Tutorial](https://github.com/Potatzz/ms-robotics-resources.github.io/blob/main/pedro_pathing.md) - A guide on how to use Pedro Pathing, the auto program we use
-
+[Pedro Pathing Tutorial](https://github.com/Potatzz/ms-robotics-resources.github.io/blob/main/pedro_pathing.md) - A guide on how to use Pedro Pathing, the auto program we use 
 [Road Runner Install](https://potatzz.github.io/ms-robotics-resources.github.io/code_setup.html) - A guide on how to install Road-Runner, the library we use to start all of our code!\
 [Andriod Studio Install](https://potatzz.github.io/ms-robotics-resources.github.io/code_setup.html) - A guide on how to install Andriod Studio, the main IDE we use for programming!\
 [Code Library](https://potatzz.github.io/ms-robotics-resources.github.io/codelibrary.html) - A collection of beginner information on Java\
