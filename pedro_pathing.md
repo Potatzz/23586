@@ -1,6 +1,6 @@
 # THIS IS A WORK IN PROGRESS
 
-# This is the Pedro Pathing Tutorial
+# Pedro Pathing Tutorial:
 
 # What is Pedro Pathing?:
 Pedro pathing is a software which allows us to plot incredibly efficient auto paths using bezier curves and lines.
