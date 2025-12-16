@@ -2,7 +2,7 @@
 
 # Pedro Pathing Tutorial:
 
-# What is Pedro Pathing?:
+# What is Pedro Pathing:
 Pedro pathing is a software which allows us to plot incredibly efficient auto paths using bezier curves and lines.
 
 # Presiquites:
