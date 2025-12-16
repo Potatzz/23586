@@ -160,11 +160,13 @@ class Drawing {
 
 In your constants file, add .mass() below
 public static FollowerConstants followerConstants = new FollowerConstants().
+
 Here is an example:
 public static FollowerConstants followerConstants = new FollowerConstants()
         .mass(5);
 
 Adding Drive-Train Constants: Copy and paste this code. MAKE SURE THE CONFIG HAS THE SAME MOTOR AND ENCODER NAMES AS THE ONES LISTED BELOW
+
 public static MecanumConstants driveConstants = new MecanumConstants()
         .maxPower(1)
         .rightFrontMotorName("RightFront")
@@ -177,6 +179,7 @@ public static MecanumConstants driveConstants = new MecanumConstants()
         .rightRearMotorDirection(DcMotorSimple.Direction.FORWARD)
 
 Then, you must add the mecanum drive-train code. MAKE SURE TO ONLY ADD THE PARTS OFF THIS SCRIPT BELOW THAT AREN"T THERE:
+
 public static Follower createFollower(HardwareMap hardwareMap) {
         return new FollowerBuilder(followerConstants, hardwareMap)
                 .pathConstraints(pathConstraints)
