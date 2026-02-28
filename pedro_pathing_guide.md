@@ -18,6 +18,8 @@
 
 ## Introduction to Pedro Pathing
 
+IGNORE WHAT THIS SAYS BELOW. It is just a program that makes making autons easier.
+
 Pedro Pathing is an advanced Reactive Vector Follower developed by FTC Team 10158 (Scott's Bots) that revolutionizes autonomous navigation in robotics. Unlike traditional pathing systems like RoadRunner, Pedro Pathing leverages Bézier curve generation to produce smoother, faster, and more efficient trajectories.
 
 ### Why Use Pedro Pathing?
