@@ -4,6 +4,7 @@
 2. [Prerequsites](#prerequsites)
 3. [Setup](#setup)
 4. [Tuning](#tuning)
+5. [Additional Resources]
 
 ---
 If you are unsure of how to program FTC, please refrence the code libary and FTC programming guide in the table of contents on the home page.
@@ -34,3 +35,9 @@ Pedro Pathing is a program for programing primarilly autonomous routines. This p
 8. Open up the teleop process tuner, and follow the on-screen instructions accordingly to navigate to forward tuner and complete it.
 9. Update the forwardtickstoinches multiplier in constants accordingly.
 10. Repeat the same process for these following tuners in this order: lateral tuner, and turn tuner.
+
+---
+## Additional Resources
+[Discord Server](https://discord.com/invite/2GfC4qBP5s)
+[Lucas Walker Gmail](lwalker30@priorypanther.com)
+[Lucas Walker Discord](https://discord.com/users/1448781171407196161)
