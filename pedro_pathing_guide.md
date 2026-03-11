@@ -18,24 +18,7 @@
 
 ## Introduction to Pedro Pathing
 
-IGNORE WHAT THIS SAYS BELOW IF YOU ARE JUST STARTING OUT. It is just a program that makes making autons easier.
-
-Pedro Pathing is an advanced Reactive Vector Follower developed by FTC Team 10158 (Scott's Bots) that revolutionizes autonomous navigation in robotics. Unlike traditional pathing systems like RoadRunner, Pedro Pathing leverages Bézier curve generation to produce smoother, faster, and more efficient trajectories.
-
-### Why Use Pedro Pathing?
-
-- **Faster Path Execution:** Uses four vectors to calculate optimal wheel powers for quick, smooth movement
-- **Dynamic Error Correction:** Continuously corrects for disturbances and gets back on path
-- **On-the-Fly Path Creation:** Can instantly navigate to any position using PID control
-- **Smoother Transitions:** Bézier curves ensure less jerky motions for precision tasks
-- **Real-Time Adaptation:** Reacts dynamically to environmental changes
-
-### Key Features
-
-- **PIDF Control:** Proportional, Integral, Derivative, and Feed-Forward control for accurate motor control
-- **Centripetal Force Correction:** Compensates for the robot's tendency to swing wide on curves
-- **Bézier Curves:** Creates smooth, natural paths between waypoints
-- **PathChains:** Allows holding end positions for actions like scoring
+Pedro pathing is a program which allows for more efficient and better autons.
 
 ---
 
@@ -45,20 +28,13 @@ Pedro Pathing is an advanced Reactive Vector Follower developed by FTC Team 1015
 
 Before using Pedro Pathing, ensure your robot meets these requirements:
 
-- **Omnidirectional Drive:** Your robot must have mecanum, X-drive, or swerve drive (not tank drive)
+- **Mecanum Drive:** Your robot must have mecanum.
 - **Localization:** Must have some form of position tracking (dead wheels, Pinpoint, OTOS, or drive encoders)
 - **Android Studio:** Your computer must use andriod studio, not onbot java.
 
 ### Installation
 
-Add Pedro Pathing to your project by adding this dependency to your `build.gradle`:
-
-```gradle
-implementation 'com.github.Pedro-Pathing:PedroPathing:1.1.0'
-```
-
-Then sync your Gradle files. You can also fork the official quickstart repository from:  
-[https://github.com/Pedro-Pathing/Quickstart](https://github.com/Pedro-Pathing/Quickstart)
+Clone the Baconbots Auto 2025 project. If you require acess to this project, please reach out to lwalker30@priorypanther.com
 
 ---
 
@@ -71,11 +47,11 @@ Pedro Pathing uses a coordinate system where:
 - Origin (0, 0) is at the bottom-left corner of the field
 - Both X and Y axes span from 0 to 144 inches
 - Heading is measured in radians (0 = facing right, π/2 = facing up)
-- To convert from RoadRunner: add 72 to both X and Y coordinates
-
+- Basically like a graph(if you have taken pre-algebra)
+ 
 ### Poses
 
-A Pose represents a position and orientation on the field with three components:
+A Pose represents a position and orientation of the robot on the field with three components:
 
 ```java
 Pose pose = new Pose(x, y, heading);
@@ -86,6 +62,11 @@ Example:
 ```java
 private final Pose startPose = new Pose(28.5, 128, Math.toRadians(180));
 ```
+
+- Heading is always determined in radians, which is the computer version of degrees. However, you can make degrees go to radians through Math.toRadians(degrees here)
+- x is the position on the x plane
+- y is likewise
+- Heading is the rotation your robot is in(i.e. 180 degrees)
 
 ### Paths vs PathChains
 
