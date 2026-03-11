@@ -47,7 +47,7 @@ Before using Pedro Pathing, ensure your robot meets these requirements:
 
 - **Omnidirectional Drive:** Your robot must have mecanum, X-drive, or swerve drive (not tank drive)
 - **Localization:** Must have some form of position tracking (dead wheels, Pinpoint, OTOS, or drive encoders)
-- **Android Studio:** Pedro Pathing does not work with OnBot Java or Blocks
+- **Android Studio:** Your computer must use andriod studio, not onbot java.
 
 ### Installation
 
