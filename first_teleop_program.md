@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -478,9 +477,4 @@ public class MyFirstTeleOpProgram {
       <div class="footer-links">
         <a href="https://potatzz.github.io/23586/">Home</a>
         <a href="https://potatzz.github.io/23586/table_of_contents.html">Contents</a>
-        <a href="mailto:cstinson29@priorypanther.com">Contact</a>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+        <a href="/cdn-cgi/l/email-protection#6a09191e030419050458532a1a18030518131a0b041e020f1844090507">Contact</a>
