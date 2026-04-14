@@ -16,4 +16,4 @@ To launch an app, just start to type in its name. When the application's icon sh
 
 
 
-[Home Page](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
+[Home Page](https://potatzz.github.io/23586/) || [Table of Contents](https://potatzz.github.io/23586/table_of_contents.html)
