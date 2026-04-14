@@ -35,4 +35,4 @@ If you're working on field centric drive, you should take a look at the NavX Cal
 
 
 
-[Home Page](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
+[Home Page](https://potatzz.github.io/23586/) || [Table of Contents](https://potatzz.github.io/23586/table_of_contents.html)
