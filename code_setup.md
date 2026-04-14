@@ -385,9 +385,4 @@ footer p {
       <div class="footer-links">
         <a href="https://potatzz.github.io/23586/">Home</a>
         <a href="https://potatzz.github.io/23586/table_of_contents.html">Contents</a>
-        <a href="mailto:cstinson29@priorypanther.com">Contact</a>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+        <a href="/cdn-cgi/l/email-protection#c4a7b7b0adaab7abaaf6fd84b4b6adabb6bdb4a5aab0aca1b6eaa7aba9">Contact</a>
