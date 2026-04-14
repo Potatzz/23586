@@ -1,7 +1,7 @@
 # Making Your First TeleOp Program
 ![Page in Progress](images/PageCaution.png)
 
-This page will walk you through making your first TeleOp program in Andriod Studio. Make sure you have Road-Runner and Andriod studio installed, if you don't you can go [here](https://potatzz.github.io/ms-robotics-resources.github.io/code_setup.html) to install them.
+This page will walk you through making your first TeleOp program in Andriod Studio. Make sure you have Road-Runner and Andriod studio installed, if you don't you can go [here](https://potatzz.github.io/23586/code_setup.html) to install them.
 
 # Some Terminology and Structure First
 Before we begin, let's go over some basic terminology, I highly suggest you also look at the (code library) as well.
@@ -102,5 +102,5 @@ Now that your code works, try a few challenges!
 \
 \
 \
-[Home](https://potatzz.github.io/ms-robotics-resources.github.io/) || [Table of Contents](https://potatzz.github.io/ms-robotics-resources.github.io/table_of_contents.html)
+[Home](https://potatzz.github.io/23586/) || [Table of Contents](https://potatzz.github.io/23586/table_of_contents.html)
 
