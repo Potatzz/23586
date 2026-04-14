@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -446,9 +445,4 @@ while (age &lt; 25) {
       <div class="footer-links">
         <a href="https://potatzz.github.io/23586/">Home</a>
         <a href="https://potatzz.github.io/23586/table_of_contents.html">Contents</a>
-        <a href="mailto:cstinson29@priorypanther.com">Contact</a>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+        <a href="/cdn-cgi/l/email-protection#9efdedeaf7f0edf1f0aca7deeeecf7f1ece7eefff0eaf6fbecb0fdf1f3">Contact</a>
