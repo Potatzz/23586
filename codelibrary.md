@@ -1,112 +1,454 @@
-# Code Library
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Library | Team 23586</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+/* ══════════════════════════════════════════════════
+   Team 23586 — Shared Styles
+   ══════════════════════════════════════════════════ */
 
 
-This page contains useful code as well as basic java grammar for programming your robot.
+:root {
+  --bg: #0a0e17;
+  --surface: #111827;
+  --surface-hover: #1a2332;
+  --surface-code: #0d1117;
+  --border: #1e293b;
+  --border-light: #334155;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent: #06d6a0;
+  --accent-dim: rgba(6, 214, 160, 0.12);
+  --accent-glow: rgba(6, 214, 160, 0.25);
+  --accent-secondary: #38bdf8;
+  --accent-secondary-dim: rgba(56, 189, 248, 0.1);
+  --gradient-start: #06d6a0;
+  --gradient-end: #38bdf8;
+  --yellow: #fbbf24;
+  --yellow-dim: rgba(251, 191, 36, 0.12);
+  --red: #f87171;
+  --red-dim: rgba(248, 113, 113, 0.12);
+  --purple: #a78bfa;
+  --purple-dim: rgba(167, 139, 250, 0.12);
+  --orange: #fb923c;
+  --orange-dim: rgba(251, 146, 60, 0.12);
+}
 
-Any code you write in java always lives inside a class. The file name must match the class name. 
-```java
-public class HelloWorld {
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* ── Ambient background ── */
+.bg-glow {
+  position: fixed; top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  pointer-events: none; z-index: 0;
+  animation: drift 20s ease-in-out infinite alternate;
+}
+.bg-glow-2 {
+  position: fixed; bottom: -300px; left: -200px;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+  pointer-events: none; z-index: 0;
+  animation: drift 25s ease-in-out infinite alternate-reverse;
+}
+@keyframes drift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-60px, 40px); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Nav ── */
+nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+.nav-brand {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.nav-brand:hover { opacity: 0.8; }
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--accent); }
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+/* ── Page header ── */
+.page-header {
+  padding: 60px 0 40px;
+  animation: fadeUp 0.5s ease-out both;
+}
+.page-header h1 {
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+.page-header h1 .gradient {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.page-header p {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+/* ── Badges ── */
+.badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+.badge.wip { background: var(--yellow-dim); color: var(--yellow); }
+.badge.windows { background: var(--accent-secondary-dim); color: var(--accent-secondary); }
+.badge.caution { background: var(--orange-dim); color: var(--orange); }
+
+/* ── Content article ── */
+.content {
+  animation: fadeUp 0.5s ease-out 0.15s both;
+}
+.content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 48px 0 16px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.content h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+.content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin: 32px 0 12px;
+  color: var(--text);
+}
+.content p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 16px;
+  max-width: 680px;
+}
+.content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.content a:hover { border-bottom-color: var(--accent); }
+.content strong { color: var(--text); font-weight: 600; }
+.content ul, .content ol {
+  margin: 12px 0 20px 24px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+.content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.content li strong { color: var(--text); }
+
+/* ── Code blocks ── */
+.content pre {
+  background: var(--surface-code);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 16px 0 24px;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #c9d1d9;
+  -webkit-overflow-scrolling: touch;
+}
+.content code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2px 7px;
+  border-radius: 5px;
+  color: var(--accent);
+}
+.content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ── Images ── */
+.content img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin: 16px 0 24px;
+  display: block;
+}
+.content .img-caption {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-top: -16px;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+/* ── Callout boxes ── */
+.callout {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 20px 0 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.callout.warning {
+  border-left-color: var(--yellow);
+}
+.callout.info {
+  border-left-color: var(--accent-secondary);
+}
+.callout strong { color: var(--text); }
+
+/* ── Challenge boxes ── */
+.challenges {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 32px 0;
+}
+.challenges h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--accent);
+}
+.challenges ul {
+  margin: 0 0 0 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.challenges li { margin-bottom: 6px; }
+
+/* ── Footer ── */
+footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+footer p {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+.footer-links a {
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--text); }
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .page-header { padding: 40px 0 28px; }
+  nav { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .content pre { padding: 14px 16px; font-size: 12px; }
+  footer { flex-direction: column; align-items: flex-start; }
+}
+
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="bg-glow-2"></div>
+  <div class="container">
+    <nav>
+      <a href="https://potatzz.github.io/23586/" class="nav-brand">23586://resources</a>
+      <ul class="nav-links">
+        <li><a href="https://potatzz.github.io/23586/">Home</a></li>
+        <li><a href="https://potatzz.github.io/23586/table_of_contents.html">Contents</a></li>
+      </ul>
+    </nav>
+
+    <section class="page-header">
+      <h1><span class="gradient">Code Library</span></h1>
+      <p>Useful code snippets and basic Java grammar for programming your robot.</p>
+    </section>
+
+    <article class="content">
+
+      <p>Any code you write in Java always lives inside a class. The file name must match the class name.</p>
+<pre><code>public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, world!");
     }
-}
-```
-# Classes
+}</code></pre>
 
-A class is the basic unit of Java. You define one with the class keyword. The name should start with a capital letter, and the file name must match.
-```java
-public class MyProgram {  
-    // code goes here  
-}  
-```
-# The Main Method
+      <h2>Classes</h2>
+      <p>A class is the basic unit of Java. You define one with the <code>class</code> keyword. The name should start with a capital letter, and the file name must match.</p>
+<pre><code>public class MyProgram {
+    // code goes here
+}</code></pre>
 
-This is the starting point of every Java program. Without it, the code won’t run.
+      <h2>The Main Method</h2>
+      <p>This is the starting point of every Java program. Without it, the code won't run.</p>
+      <ul>
+        <li><code>public</code> → means it can be accessed from anywhere</li>
+        <li><code>static</code> → means it belongs to the class, not an object</li>
+        <li><code>void</code> → means it doesn't return anything</li>
+        <li><code>main(String[] args)</code> → the special method that runs first</li>
+      </ul>
+<pre><code>public class MyProgram {
+    public static void main(String[] args) {
+        // program starts here
+    }
+}</code></pre>
 
-public → means it can be accessed from anywhere.
-
-static → means it belongs to the class, not an object.
-
-void → means it doesn’t return anything.
-
-main(String[] args) → the special method that runs first.  
-```java
-publc class MyProgram {
-  public static void main(String[] args) {
-      // program starts here
-  }
-}
-```
-# Variables
-Variables are very important in java and programming the robot, they will hold a lot of data required for the robot to run 
-Java requires you to declare the type of data a variable will hold.
-
-int → whole numbers
-
-double → decimals
-
-String → text
-
-boolean → true/false
-```java
-int age = 20;
+      <h2>Variables</h2>
+      <p>Variables are very important in Java and programming the robot — they will hold a lot of data required for the robot to run. Java requires you to declare the type of data a variable will hold.</p>
+      <ul>
+        <li><code>int</code> → whole numbers</li>
+        <li><code>double</code> → decimals</li>
+        <li><code>String</code> → text</li>
+        <li><code>boolean</code> → true/false</li>
+      </ul>
+<pre><code>int age = 20;
 double price = 9.99;
 String name = "Alexander";
-boolean isJavaFun = true;
-```
-# Conditionals
+boolean isJavaFun = true;</code></pre>
 
-Use if and else to control decisions. The condition inside parentheses must be true/false.
-```java
-if (height >= 5) {
+      <h2>Conditionals</h2>
+      <p>Use <code>if</code> and <code>else</code> to control decisions. The condition inside parentheses must be true/false.</p>
+<pre><code>if (height >= 5) {
     System.out.println("Tall");
 } else {
     System.out.println("Short");
-}
-```
-# Loops
+}</code></pre>
 
-Loops repeat code.
-
-For loop runs a set number of times.
-
-While loop repeats while a condition is true.
-```java
-for (int i = 0; i < 5; i++) {
+      <h2>Loops</h2>
+      <p>Loops repeat code. A <strong>for loop</strong> runs a set number of times. A <strong>while loop</strong> repeats while a condition is true.</p>
+<pre><code>for (int i = 0; i &lt; 5; i++) {
     System.out.println(i);
 }
 
-while (age < 25) {
+while (age &lt; 25) {
     age++;
-    //++ function just increases the age by 1
-}
-```
-# Methods
+    // ++ just increases the age by 1
+}</code></pre>
 
-Methods group reusable code. They have a return type, a name, and parentheses for parameters.
-```java
-public static greet(int a, int b) {
+      <h2>Methods</h2>
+      <p>Methods group reusable code. They have a return type, a name, and parentheses for parameters.</p>
+<pre><code>public static int add(int a, int b) {
     int c = a + b;
     return c;
 }
-//if you dont have a return add void to it
-```
-# Key Rules
+// if you don't have a return, add void to it</code></pre>
 
-Every statement ends with ;
+      <h2>Key Rules</h2>
+      <ul>
+        <li>Every statement ends with <code>;</code></li>
+        <li><code>{ }</code> group blocks of code</li>
+        <li><code>main</code> is required for execution</li>
+        <li>Types of variables must be declared</li>
+      </ul>
 
-{ } group blocks of code
+      <h2>Programming in FTC</h2>
+      <p>To learn more in depth about programming for FTC specifically, you can download <a href="https://github.com/Potatzz/23586/tree/bbe5959fdd6d67d1f036102f8bf4f4e890d67479/Downloadable%20Resources" target="_blank" rel="noopener">this PDF</a> from our GitHub.</p>
+      <p>You can also check out the tutorial on <a href="https://potatzz.github.io/23586/first_teleop_program.html">making your first TeleOp program</a>.</p>
 
-main is required for execution
+    </article>
 
-Types of variables must be declared
-
-
-# Programming in FTC
-To learn more in depth about programming for FTC specifically, you can download [this pdf](https://github.com/Potatzz/23586/tree/bbe5959fdd6d67d1f036102f8bf4f4e890d67479/Downloadable%20Resources) from our GitHub: <https://github.com/Potatzz/23586/tree/bbe5959fdd6d67d1f036102f8bf4f4e890d67479/Downloadable%20Resources>
-
-
-You can also check out this tutorial on making your first TeleOp program [here](https://potatzz.github.io/23586/first_teleop_program.html)
-
-
-[Home Page](https://potatzz.github.io/23586/) || [Table of Contents](https://potatzz.github.io/23586/table_of_contents.html)
+    <footer>
+      <p>&copy; 2026 Team 23586 · Woodside Priory School</p>
+      <div class="footer-links">
+        <a href="https://potatzz.github.io/23586/">Home</a>
+        <a href="https://potatzz.github.io/23586/table_of_contents.html">Contents</a>
+        <a href="mailto:cstinson29@priorypanther.com">Contact</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
