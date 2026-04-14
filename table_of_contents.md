@@ -3,7 +3,6 @@
 <br />
 ### Programming
 [Pedro Pathing Tutorial](https://pedropathing.com/) - A guide on how to use Pedro Pathing, the auto program we use! This guide was written with the assistance of BaronClaps, BeepBot99, nesetKab, ultimatehecker, GoKubar, and several others.\
-[Road Runner Install](https://potatzz.github.io/23586/code_setup.html) - A guide on how to install Road-Runner, the library we use to start all of our code!\
 [Andriod Studio Install](https://potatzz.github.io/23586/code_setup.html) - A guide on how to install Andriod Studio, the main IDE we use for programming!\
 [Code Library](https://potatzz.github.io/23586/codelibrary.html) - A collection of beginner information on Java\
 [Simple FTC Programming Tutorial](https://potatzz.github.io/23586/first_teleop_program.html) - Guides you through making a simple program to move a motor via the joystick!\
